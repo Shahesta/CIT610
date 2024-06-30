@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - Pre_Build-echo Logging in to Amazon ECR...
+      
+  build:
+    commands:
+      - Build-echo Build started on `date`
+      - Build-echo Building the Docker image...
+ 
+  post_build:
+    commands:
+      - Post_Build-echo Build completed on `date`
+
+artifacts:
+    files: imagedefinitions.json
