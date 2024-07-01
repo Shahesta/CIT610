@@ -17,6 +17,7 @@ phases:
 artifacts:
   files:
     - '**/*'
+    - imagedefinitions.json
   base-directory: base_dir
   name: build-artifact-name
   discard-paths: no
